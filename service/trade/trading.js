@@ -7,8 +7,8 @@ const { makeResponse } = require('./mockResponse');
  */
 function trading(request, response, next) {
   if (request.method === 'GET') {
-    response.writeHead(200);
-    response.end(makeResponse());
+    response.setHeader('Content-Type', 'application/json');
+    response.end(JSON.stringify(makeResponse()));
   }
 }
 

@@ -1,3 +1,5 @@
+const buy = 1.22345;
+const sell = 1.22123;
 let response = [
   { pair: 'USD CHF', buy: 0.99143, sell: 0.99043 },
   { pair: 'GBP USD', buy: 1.28495, sell: 1.2836 },
@@ -25,14 +27,14 @@ function makeResponse() {
     const element = response[index];
     const value = calculateValue();
     if (calculateSign()) {
-      element['buy'] = element['buy'] + element['buy'] / value;
-      element['sell'] = element['sell'] + element['sell'] / value;
+      element['buy'] = +element['buy'] + +element['buy'] / value;
+      element['sell'] = +element['sell'] + +element['sell'] / value;
     } else {
-      element['buy'] = element['buy'] - element['buy'] / value;
-      element['sell'] = element['sell'] - element['sell'] / value;
+      element['buy'] = +element['buy'] - +element['buy'] / value;
+      element['sell'] = +element['sell'] - +element['sell'] / value;
     }
-    element['buy'] = (element['buy'] !== 0) ? element['buy'].toFixed(5) : 1.22;
-    element['sell'] = (element['buy'] !== 0) ? element['sell'].toFixed(5) : 1.11;
+    element['buy'] = (+element['buy'] !== 0) ? element['buy'].toFixed(5) : buy;
+    element['sell'] = (+element['buy'] !== 0 && +element['sell'] !== 0) ? element['sell'].toFixed(5) : sell;
   }
   return response;
 }

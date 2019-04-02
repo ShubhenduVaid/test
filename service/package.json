@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./app.js"
+    "start": "nodemon ./app.js",
+    "test": "mocha test/**/*.js"
   },
   "author": "Shubhendu",
   "license": "ISC",
   "dependencies": {
     "connect": "^3.6.6"
+  },
+  "devDependencies": {
+    "mocha": "^6.0.2"
   }
 }
