@@ -10,10 +10,10 @@ describe('/GET trading', () => {
       .get('/trading')
       .end((err, res) => {
         expect(res.status).to.equal(200);
-        expect(res.body.length).to.equal(6);
-        expect(res.body[0]).to.have.property('buy');
-        expect(res.body[0]).to.have.property('sell');
-        expect(res.body[0]).to.have.property('pair');
+        expect(res.body.data.length).to.equal(6);
+        expect(res.body.data[0]).to.have.property('buy');
+        expect(res.body.data[0]).to.have.property('sell');
+        expect(res.body.data[0]).to.have.property('pair');
         done();
       });
   });

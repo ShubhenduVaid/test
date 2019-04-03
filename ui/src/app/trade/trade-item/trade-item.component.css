@@ -1,0 +1,37 @@
+.card {
+  width: 300px;
+  float: left;
+  margin: 5px;
+  border: 1px solid grey;
+  background-color: lightgrey;
+}
+
+.header {
+  text-align: center;
+  background-color: grey;
+  color: white;
+  font-weight: bold;
+}
+
+.sell {
+  background-color: white;
+  float: left;
+  border: 1px solid white;
+}
+
+.sell:after {
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.buy {
+  float: right;
+  background-color: white;
+  border: 1px solid white;
+}
