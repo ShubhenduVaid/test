@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./app.js",
-    "test": "mocha test/**/*.js"
+    "test": "mocha test/**/*.js",
+    "only-test": "mocha --inspect-brk test/*.js"
   },
   "author": "Shubhendu",
   "license": "ISC",
@@ -13,6 +14,8 @@
     "connect": "^3.6.6"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
     "mocha": "^6.0.2"
   }
 }

@@ -5,8 +5,8 @@ describe('check Mock Response', function () {
   it('should return same length of array', function () {
     assert.equal(makeResponse().length, 6);
   });
-  describe('check increment/decrement buy and sell by 10% for 50 iterations', function () {
-    for (let index = 0; index < 50; index++) {
+  describe('check increment/decrement buy and sell by 10% for 10 iterations', function () {
+    for (let index = 0; index < 10; index++) {
       const mockResponse = makeResponse();
       const response = makeResponse();
       mockResponse.forEach((data, index) => {
