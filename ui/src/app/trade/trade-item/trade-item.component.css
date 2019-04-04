@@ -1,5 +1,5 @@
 .card {
-  width: 300px;
+  width: 310px;
   float: left;
   margin: 5px;
   border: 1px solid grey;
@@ -50,5 +50,25 @@
 
 .content-data {
   font-size: 25px;
+  margin: 5px;
+}
+
+.arrow-up {
+  float: left;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 22px solid green;
+  margin: 5px;
+}
+
+.arrow-down {
+  float: left;
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 22px solid red;
   margin: 5px;
 }

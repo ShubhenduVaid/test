@@ -10,7 +10,6 @@ import { TradeObject } from '../trade.model';
 })
 export class TradeItemComponent {
   private _tradeItem: TradeObject;
-
   @Input()
   set tradeItem(tradeItem: TradeObject) {
     this._tradeItem = tradeItem;

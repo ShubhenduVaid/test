@@ -7,5 +7,6 @@ export interface TradeObject {
   buy: string;
   sell: string;
   pair: string;
+  isBuyIncreased?: boolean;
 }
 

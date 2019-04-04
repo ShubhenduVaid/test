@@ -6,6 +6,8 @@
       <div class="content-data content-left">{{tradeItem.sell}}</div>
     </div>
   </div>
+  <div class="arrow-up" *ngIf="tradeItem.isBuyIncreased"></div>
+  <div class="arrow-down" *ngIf="!tradeItem.isBuyIncreased"></div>
   <div class="blob blob-right">
     <div class="content-right">
       <div class="content-header content-right">Buy {{tradeItem.pair.split(' ')[0]}}</div>
