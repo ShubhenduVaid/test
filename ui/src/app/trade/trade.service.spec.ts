@@ -1,11 +1,13 @@
 import { TestBed, inject } from '@angular/core/testing';
 
 import { TradeService } from './trade.service';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('TradeService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [TradeService]
+      providers: [TradeService],
+      imports: [HttpClientModule]
     });
   });
 
