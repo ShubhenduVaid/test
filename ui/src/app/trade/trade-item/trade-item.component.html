@@ -1,5 +1,15 @@
 <div class="card">
   <div class="header">{{tradeItem.pair}}</div>
-  <div class="sell">{{tradeItem.sell}}</div>
-  <div class="buy">{{tradeItem.buy}}</div>
+  <div class="blob blob-left">
+    <div class="content-left">
+      <div class="content-header content-left">Sell {{tradeItem.pair.split(' ')[0]}}</div>
+      <div class="content-data content-left">{{tradeItem.sell}}</div>
+    </div>
+  </div>
+  <div class="blob blob-right">
+    <div class="content-right">
+      <div class="content-header content-right">Buy {{tradeItem.pair.split(' ')[0]}}</div>
+      <div class="content-data content-right">{{tradeItem.buy}}</div>
+    </div>
+  </div>
 </div>

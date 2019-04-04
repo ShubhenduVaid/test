@@ -13,25 +13,42 @@
   font-weight: bold;
 }
 
-.sell {
+.blob {
   background-color: white;
+  height: 55px;
+  width: 125px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.blob-left {
   float: left;
-  border: 1px solid white;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: red;
 }
 
-.sell:after {
-  content: "";
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 0;
-  border-left: 20px solid white;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-}
-
-.buy {
+.blob-right {
   float: right;
-  background-color: white;
-  border: 1px solid white;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  color: green;
+}
+
+.content-left {
+  float: left;
+}
+
+.content-right {
+  float: right;
+}
+
+.content-header {
+  font-size: 11px;
+  margin: 5px;
+}
+
+.content-data {
+  font-size: 25px;
+  margin: 5px;
 }
