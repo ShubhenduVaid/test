@@ -14,16 +14,16 @@ describe('check Mock Response', function () {
         const buyEnd = +data.buy + +data.buy / 10;
         const sellStart = +data.sell - +data.sell / 10;
         const sellEnd = +data.sell + +data.sell / 10;
-        console.log(`
-      BUY :::
-      start => ${buyStart}
-      value => ${+response[index].buy}
-      end   => ${buyEnd}
-      SELL :::
-      start => ${sellStart}
-      value => ${+response[index].sell}
-      end   => ${sellEnd}
-      `);
+      //   console.log(`
+      // BUY :::
+      // start => ${buyStart}
+      // value => ${+response[index].buy}
+      // end   => ${buyEnd}
+      // SELL :::
+      // start => ${sellStart}
+      // value => ${+response[index].sell}
+      // end   => ${sellEnd}
+      // `);
         const buyInLimit = (+response[index].buy <= buyEnd && +response[index].buy >= buyStart) ? true : false;
         const sellInLimit = (+response[index].sell <= sellEnd && +response[index].sell >= sellStart) ? true : false;
         const buyMoreThanSell = (+response[index].buy > +response[index].sell) ? true : false;
