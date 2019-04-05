@@ -1,10 +1,9 @@
-# test
-To run node server locally
+# service run locally
 npm run start
-To run node server unit tests
+# service run test
 npm run test
 
-To run ui locally
+# ui run locally
 npm run start
-To run node server unit tests
+# ui run test
 npm run test
