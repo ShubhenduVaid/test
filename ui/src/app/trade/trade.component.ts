@@ -19,6 +19,7 @@ export class TradeComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.oldTradeList = [];
+    this.tradeList = [];
     this.interval = setInterval(() => {
       this.tradeService.getTradingList().subscribe(res => {
         res.data.forEach((element, index) => {
